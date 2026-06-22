@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image">
+        <img src="images/download (1).webp" onclick="openLightbox(0)">
+        <img src="images/download (2).webp" onclick="openLightbox(1)">
+        <img src="images/OIP (1).webp" onclick="openLightbox(2)">
+        <img src="images/OIP (2).webp" onclick="openLightbox(3)">
+        <img src="images/OIP.webp" onclick="openLightbox(4)">
+    </div>
+   <div id="lightbox">
+    <span onclick="closeLightbox()">X</span>
+    <button onclick="changeImage(-1)">❮</button>
+        <img id="lightbox-img">
+    <button onclick="changeImage(1)">❯</button>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
