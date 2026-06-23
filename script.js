@@ -6,11 +6,10 @@ const images=[
     "images/OIP.webp" ,
 ];
 let currentIndex=0;
-function openLightbox(index){
-    currentIndex=index;
-    document.getElementById("lightbox").style.display="block";
-    document.getElementById("lightbox-img").src=images[currentIndex];
-
+function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = images[currentIndex];
 }
 
 function closeLightbox() {
